@@ -309,7 +309,6 @@ class MyRobot(LoggedRobot):
         This runs after the mode specific periodic functions, but before LiveWindow and
         SmartDashboard integrated updating."""
 
-
         # Runs the Scheduler. This is responsible for polling buttons, adding
         # newly-scheduled commands, running already-scheduled commands, removing
         # finished or interrupted commands, and running subsystem periodic() methods.
@@ -317,12 +316,13 @@ class MyRobot(LoggedRobot):
         # the Command-based framework to work.
         CommandScheduler.getInstance().run()
 
-
     def disabledInit(self) -> None:
         """This function is called once each time the robot enters Disabled mode."""
+        pass
 
     def disabledPeriodic(self) -> None:
         """This function is called periodically when disabled"""
+        pass
 
     def autonomousInit(self) -> None:
         """This autonomous runs the autonomous command selected by your RobotContainer class."""
@@ -357,6 +357,12 @@ class MyRobot(LoggedRobot):
         pass
 
     def testPeriodic(self) -> None:
+        pass
+
+    def simulationInit(self) -> None:
+        pass
+
+    def simulationPeriodic(self) -> None:
         pass
 
     def endCompetition(self) -> None:

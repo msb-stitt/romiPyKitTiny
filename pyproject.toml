@@ -3,7 +3,7 @@
 # in your project.
 #
 [project]
-name = "romireftinty"
+name = "romipykiyyiny"
 version = "0.1.0"
 description = "A WPILib Romi Robot"
 readme = "README.md"
